@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <b><%= locals.question.question %></b>
+    <form action="/submit" method="POST">
+        <input type="radio" id="A" name="options" value="0"><label for="A"><%= locals.question.choices[0] %></label><br>
+        <input type="radio" id="B" name="options" value="1"><label for="B"><%= locals.question.choices[1] %></label><br>
+        <input type="radio" id="C" name="options" value="2"><label for="C"><%= locals.question.choices[2] %></label><br>
+        <input type="radio" id="D" name="options" value="3"><label for="D"><%= locals.question.choices[3] %></label><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
